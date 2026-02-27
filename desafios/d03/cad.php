@@ -11,8 +11,15 @@
         <h1>Conversor de Moedas v1.0</h1>
         <?php
             $nmr = $_GET["nmr"];
-            echo "$nmr";
+            $res = $nmr * 5.13;
+            $res = number_format($res , 2, ",", ".");
+
+            echo "Seus R$ " . $nmr . " equivalem a <strong>US$ " . $res . "</strong><br><br>";
+            echo "* <strong>Cotação fixa de 5,13</strong> informada diretamente no código.";
         ?>
+        <br><br>
+        <button onclick="history.back()">Voltar</button>
+
     </section>
 </body>
 </html>

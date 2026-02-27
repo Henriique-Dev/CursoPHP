@@ -19,7 +19,8 @@
             echo "O seu <em>sucessor</em> é $suc<br>";
 
         ?>
-        <a href="javascript:history.go(-1)"><input type="button" value="Voltar">
+        <br>
+        <button onclick="history.back()">Voltar</button>
     </section>
 </body>
 </html>
