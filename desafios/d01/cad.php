@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <section>
+    <main>
         <h1>Resultado Final</h1>
         <?php 
             $num = $_GET["nmr"];
@@ -20,7 +20,7 @@
 
         ?>
         <br>
-        <button onclick="history.back()">Voltar</button>
-    </section>
+        <button onclick="javascript:window.location.href='index.html'">&#x2b05;Voltar</button>
+    </main>
 </body>
 </html>

@@ -17,7 +17,7 @@
         
         ?>
         <br> <br>
-        <button onclick="location.reload();">Gerar outro</button>
+        <button onclick="location.reload();">&#x1F504; Gerar outro</button>
     </section>
 </body>
 </html>
