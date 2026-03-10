@@ -20,6 +20,7 @@
             $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
 
             echo "<p>Seus " . numfmt_format_currency($padrao, $cotacao, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrao, $res, "USD") . "</strong></p>";
+            echo "* <strong>Cotação fixa de 5,13</strong> informada diretamente no código.";
 
         ?>
         <br><br>
