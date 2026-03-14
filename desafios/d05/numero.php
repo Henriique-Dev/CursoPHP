@@ -10,7 +10,7 @@
     <section>
         <h1>Analisador de Números Real</h1>
         <?php 
-            $nmr = $_GET["valor"];
+            $nmr = $_POST["valor"];
             $parteInt = floor($nmr);
             $parteFrac = $nmr - $parteInt;
             $nmr = number_format($nmr, 3, ",", ".");
@@ -24,6 +24,7 @@
             EOT;
 
         ?>
+        <button onclick="javascript:window.location.href='index.html'">Voltar</button>
         
     </section>
 </body>

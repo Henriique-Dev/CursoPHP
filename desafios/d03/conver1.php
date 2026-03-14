@@ -10,8 +10,9 @@
     <section>
         <h1>Conversor de Moedas v1.0</h1>
         <?php
-            $cotacao = $_GET["nmr"] ?? 0;
-            $res = $cotacao / 5.13;
+            $cotacao = 5.13;
+            $real = $_GET["nmr"] ?? 0;
+            $dolar = $cotacao / $real;
             // $res = number_format($res , 2, ",", ".");
 
             // echo "Seus R$ " . $cotacao . " equivalem a <strong>US$ " . $res . "</strong><br><br>";
@@ -19,7 +20,7 @@
 
             $padrao = numfmt_create("pt-BR", NumberFormatter::CURRENCY);
 
-            echo "<p>Seus " . numfmt_format_currency($padrao, $cotacao, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrao, $res, "USD") . "</strong></p>";
+            echo "<p>Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a <strong>" . numfmt_format_currency($padrao, $dolar, "USD") . "</strong></p>";
             echo "* <strong>Cotação fixa de 5,13</strong> informada diretamente no código.";
 
         ?>
