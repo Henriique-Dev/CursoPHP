@@ -12,7 +12,7 @@
         <?php
             $cotacao = 5.13;
             $real = $_GET["nmr"] ?? 0;
-            $dolar = $cotacao / $real;
+            $dolar = $real / $cotacao;
             // $res = number_format($res , 2, ",", ".");
 
             // echo "Seus R$ " . $cotacao . " equivalem a <strong>US$ " . $res . "</strong><br><br>";
@@ -25,7 +25,7 @@
 
         ?>
         <br><br>
-        <button onclick="javascript:window.location.href='index.html'">Voltar</button>
+         <button onclick="javascript:window.location.href='index.html'">Voltar</button>
 
     </section>
 </body>
