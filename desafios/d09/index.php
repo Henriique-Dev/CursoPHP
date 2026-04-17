@@ -54,8 +54,8 @@
         <h2>Cálculo das Médias</h2>
         <p>Analisando os valores <?= $nota1 ?> e <?= $nota2 ?>:</p>
         <ul>
-            <li>A <strong>Média Aritmética Simples</strong> entre os valores é igual a <?= moeda(mediaAritSimp($nota1, $nota2)) ?></li>
-            <li>A <strong>Média Aritmética Ponderada</strong> com pesos <?= $peso1 ?> e <?= $peso2 ?> é igual a <?= moeda(mediaAritPond($nota1, $peso1, $nota2, $peso2)) ?></li>
+            <li>A <strong>Média Aritmética Simples</strong> entre os valores é igual a <?= moeda(mediaAritSimp($nota1, $nota2)) ?>.</li>
+            <li>A <strong>Média Aritmética Ponderada</strong> com pesos <?= $peso1 ?> e <?= $peso2 ?> é igual a <?= moeda(mediaAritPond($nota1, $peso1, $nota2, $peso2)) ?>.</li>
         </ul>
     </section>
 
