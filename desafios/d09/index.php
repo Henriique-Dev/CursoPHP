@@ -9,9 +9,9 @@
 <body>
     <?php 
         $nota1 = $_GET['nota1'] ?? 0;
-        $peso1 = $_GET['peso1'] ?? 0;
+        $peso1 = $_GET['peso1'] ?? 1;
         $nota2 = $_GET['nota2'] ?? 0;
-        $peso2 = $_GET['peso2'] ?? 0;
+        $peso2 = $_GET['peso2'] ?? 1;
 
         function mediaAritSimp($nota1, $nota2){
             $media = ($nota1 + $nota2) / 2;

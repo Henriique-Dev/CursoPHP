@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        $anoNasc = $_GET['nasc'] ?? 2000;
+        $anoNasc = $_GET['nasc'] ?? 2002;
         $anoAtual = $_GET['atual'] ?? 2026;
 
         function idade ($anoNasc, $anoAtual){

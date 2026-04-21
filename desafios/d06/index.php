@@ -8,11 +8,13 @@
 </head>
 <body>
     <?php 
-        $valor1 = $_GET['divid']??0;
-        $valor2 = $_GET['divisor']??0;
+        $valor1 = $_GET['divid'] ?? 0;
+        $valor2 = $_GET['divisor'] ?? 1;
 
+        
         $res = $valor1 / $valor2;
         $resto = $valor1 % $valor2;
+        
 
     ?>
 
