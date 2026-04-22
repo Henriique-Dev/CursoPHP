@@ -36,14 +36,14 @@
 
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
             <label for="nota1">1º Valor</label>
-            <input type="number" name="nota1" id="nota1">
+            <input type="number" name="nota1" id="nota1" value="<?= $nota1 ?>">
             <label for="peso1">1º Peso</label>
-            <input type="number" name="peso1" id="peso1">
+            <input type="number" name="peso1" id="peso1" value="<?= $peso1 ?>">
 
             <label for="nota2">2º Valor</label>
-            <input type="number" name="nota2" id="nota2">
+            <input type="number" name="nota2" id="nota2" value="<?= $nota2 ?>">
             <label for="peso2">2º Peso</label>
-            <input type="number" name="peso2" id="peso2">
+            <input type="number" name="peso2" id="peso2" value="<?= $peso2 ?>">
 
             <input type="submit" value="Calcular Médias">
 
