@@ -16,7 +16,7 @@
         $sal = $_GET['salario']??0;
 
         $quantidade_salario = floor( $sal / $sal_minimo);
-        $sobra = $sal - ($quantidade_salario * $sal_minimo);
+        $sobra = $sal % $sal_minimo;
 
     ?>
 
