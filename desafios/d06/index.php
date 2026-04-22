@@ -24,20 +24,26 @@
             <label for="dividendo">Dividendo</label>
             <input type="number" name="divid" id="divid" value="<?= $valor1 ?>">
             <label for="divisor">Divisor</label>
-            <input type="number" name="divisor" id="divisor" value="<?= $valor2 ?>">
+            <input type="number" name="divisor" id="divisor" min="1" value="<?= $valor2 ?>">
             <input type="submit" value="Analisar">
         </form>
 
         
     </main>
-        <section>
-            <h2>Estrutura da Divisão</h2>
-            <p>Dividendo: <?= $valor1 ?></p>
-            <p>Dividendo: <?= $valor2 ?></p>
-            <p>Resultado: <?= $res ?></p>
-            <p>Resto: <?= $resto ?></p>
 
-        </section>
+    <section>
+        <table class="divisao">
+            <tr>
+                <td><?= $valor1 ?></td>
+                <td><?= $valor2 ?></td>
+            </tr>
+            <tr>
+                <td><?= $resto ?></td>
+                <td><?= $res ?></td>
+            </tr>
+        </table>
+
+    </section>
 
 </body>
 </html>
