@@ -15,6 +15,7 @@
 
         $quadrada = sqrt($numero);
         $cubica = pow($numero, 1/3);
+        // $cubica = $numero ** (1/3));
     
     ?>
     <main>
@@ -28,7 +29,7 @@
 
     <section>
         <h2>Resultado Final</h2>
-        <p>Analisando o número 1, temos: </p>
+        <p>Analisando o  <strong>número <?= $numero ?></strong>, temos: </p>
             <ul>
                 <li>A sua raiz quadrada é <strong><?= moeda($quadrada) ?></strong>.</li>
                 <li>A sua raiz cúbica é <strong><?= moeda($cubica) ?></strong>.</li>
