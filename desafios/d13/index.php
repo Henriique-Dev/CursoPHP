@@ -9,6 +9,7 @@
     <style>
         .cedulas {
             width: 124px;
+            margin: 5px;
         }
     </style>
 </head>
@@ -40,7 +41,7 @@
         <h1>Caixa Eletrônico</h1>
         <form action="<?= $_SERVER['PHP_SELF'] ?>" method="get">
             <label for="saque">Qual valor você deseja sacar? (R$)</label>
-            <input type="number" name="saque" id="saque" step="1">
+            <input type="number" name="saque" id="saque" step="5">
             <small>*Notas disponíveis: R$100, R$50, R$10 e R$5</small>
             
             <input type="submit" value="Sacar">
