@@ -24,7 +24,7 @@
             <input type="number" name="preco" id="preco">
 
             <label for="percent">Qual será o pecentual de reajuste? (<span id="valorPorc">50%</span>)</label>
-            <input type="range" name="porcent" id="porcent" min="0" max="100" value="50" oninput="document.getElementById('valorPorc').innerText = this.value + '%'">
+            <input type="range" name="porcent" id="porcent" min="0" max="100" value="50" oninput="document.getElementById('valorPorc').innerText = this.value + '%'" step="1">
 
             <input type="submit" value="Reajustar">
         </form>
